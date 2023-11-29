@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="mycart.css">
+    <link
+    href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+    rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <title>E-commerce</title>
+    
+</head>
+<body>
+    <nav>
+        <div class="navTop">  
+            <div class="navItem">
+                <img src="img/logo2.png" width="120px" height="auto" alt="">
+            </div>
+            <div class="menu">
+                <h3 class="menuItem">MY CART</h3>
+                <h3 class="menuItem" onclick="navigateTo('men.html')">MEN</h3>
+                <h3 class="menuItem" onclick="navigateTo('women.html')">WOMEN</h3>
+                <h3 class="menuItem" onclick="navigateTo('kids.html')">KIDS</h3>
+                <h5 class="menuItem" onclick="navigateTo('index.html')">Click here to go to home</h5>
+            </div>
+    </nav>
+    <div class="container">
+        <div id="root"></div>
+        <div class="sidebar">
+            <div class="head"><p>My Cart</p></div>
+            <div id="cartItem">Your cart is EMPTY!</div>
+            <div class="foot">
+                <h3>TOTAL</h3>
+                <h2 id="total">₹ 0.00</h2>
+            </div>
+        </div>
+    </div>
+    <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+    <footer>
+        <div class="footerLeft">
+            <div class="footerMenu">
+                <h1 class="fMenuTitle">About Us</h1>
+                <ul class="fList">
+                    <li class="fListItem">Company</li>
+                    <li class="fListItem">Contact</li>
+                    <li class="fListItem">Stores</li>
+                </ul>
+            </div>
+            <div class="footerMenu">
+                <h1 class="fMenuTitle">Support</h1>
+                <ul class="fList">
+                    
+                    <li class="fListItem">Refund</li>
+                    <li class="fListItem">FAQ</li>
+                    <li class="fListItem">Feedback</li>
+                   
+                </ul>
+            </div>
+            <div class="footerMenu">
+                <h1 class="fMenuTitle">Products</h1>
+                <ul class="fList">
+                    <li class="fListItem">Men</li>
+                    <li class="fListItem">Women</li>
+                    <li class="fListItem">Kids</li>
+                    
+                </ul>
+            </div>
+        </div>
+        <div class="footerRight">
+            <div class="footerRightMenu">
+                <h1 class="fMenuTitle">Follow Us</h1>
+                <div class="fIcons">
+                    <img src="./img/facebook.png" alt="" class="fIcon">
+                    <img src="./img/twitter.png" alt="" class="fIcon">
+                    <img src="./img/instagram.png" alt="" class="fIcon">
+                    <img src="./img/whatsapp.png" alt="" class="fIcon">
+                </div>
+            </div>
+            <div class="footerRightMenu">
+                <span class="copyright">All rights reserved. 2023.</span>
+            </div>
+        </div>
+    </footer>
+    <!-- Include this script in your HTML file -->
+    <script>
+        window.onload = function () {
+            var cartContainer = document.getElementById("cartItem");
+            var totalElement = document.getElementById("total");
+
+            var urlParams = new URLSearchParams(window.location.search);
+            var productName = urlParams.get('productName');
+            var productPrice = parseFloat(urlParams.get('productPrice')) || 0;
+
+            if (productName && productPrice) {
+                cartContainer.innerText = '';
+
+                var productItem = document.createElement("div");
+                productItem.classList.add("product-item");
+
+                productItem.innerHTML = `
+                    <div class="part-2">
+                        <h3 class="product-title">${productName}</h3>
+                        <h4 class="product-price">₹ ${productPrice.toFixed(2)}</h4>
+                    </div>
+                `;
+
+                cartContainer.appendChild(productItem);
+
+                var total = productPrice;
+                totalElement.innerText = `₹ ${total.toFixed(2)}`;
+            }
+        };
+    </script>
+    
+    <script src="https://kit.fontawesome.com/ea3da796ff.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <script src="./index.js"></script>
+</body>
+</html>

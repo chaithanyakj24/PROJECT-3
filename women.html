@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="women.css">
+    <link
+    href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+    rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <title>E-commerce</title>
+    
+</head>
+<body>
+    <nav>
+        <div class="navTop">  
+            <div class="navItem">
+                <img src="img/logo2.png" width="120px" height="auto" alt="">
+            </div>
+            <div class="menu">
+                <h3 class="menuItem" onclick="navigateTo('index.html')">HOME</h3>
+                <h3 class="menuItem" onclick="navigateTo('men.html')">MEN</h3>
+                <h3 class="menuItem" onclick="navigateTo('women.html')">WOMEN</h3>
+                <h3 class="menuItem" onclick="navigateTo('kids.html')">KIDS</h3>
+            </div>
+            <div class="navItem">
+                <div class="cart" onclick="redirectToCart()">         
+                        <i class="fa-solid fa-cart-shopping fa-2xl"></i>
+                        <p id="count">0</p>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Categories</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-center text-center" id="navbarSupportedContent">
+                <ul class="navbar-nav">
+                    <li class="nav-item me-5"><a class="nav-link active" aria-current="page" href="#sandals-section">Sandals</a></li>
+                    <li class="nav-item me-5"><a class="nav-link active" aria-current="page" href="#bridal-section">Bridal collections</a></li>
+                    <li class="nav-item me-5"><a class="nav-link active" aria-current="page" href="#heels-section">High- heels</a></li>
+                    <li class="nav-item me-5"><a class="nav-link active" aria-current="page" href="#boots-section">Boots</a></li>
+                    <li class="nav-item me-5"><a class="nav-link active" aria-current="page" href="#sneakers-section">Sneakers and Shoes</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <section id="poster">
+        <h2>COME ON.....</h2>
+        <p>"Chic feet, happy heart: Elevate your look from the ground up."</p>
+      </section>
+      <section class="section-products"  id="sandals-section">
+        <div class="container">
+                <div class="row justify-content-center text-center">
+                        <div class="col-md-8 col-lg-6">
+                                <div class="header">  
+                                        <h2>SANDALS</h2>
+                                </div>
+                        </div>
+                </div>
+                <div class="row">
+                        <div class="col-md-6 col-lg-4 col-xl-3">
+                                <div id="product-2a" class="single-product">
+                                        <div class="part-1">
+                                                <ul>
+                                                        <li><a href="#"><i class="fas fa-shopping-cart"></i></a></li>
+                                                        <li><a href="#"><i class="fas fa-heart"></i></a></li>
+                                                </ul>
+                                        </div>
+                                        <div class="part-2">
+
+                                                <h3 class="product-title">BATA BLUE SANDAL FOR WOMEN</h3>
+                                                <h4 class="product-price">₹ 1000.00</h4>
+                                        </div>
+                                </div>
+                        </div>
+                        <div class="col-md-6 col-lg-4 col-xl-3">
+                                <div id="product-2b" class="single-product">
+                                        <div class="part-1">
+                                                <span class="discount">15% off</span>
+                                                <ul>
+                                                        <li><a href="#"><i class="fas fa-shopping-cart"></i></a></li>
+                                                        <li><a href="#"><i class="fas fa-heart"></i></a></li>
+                                                </ul>
+                                        </div>
+                                        <div class="part-2">
+                                                <h3 class="product-title">BATA GOLD SANDAL FOR WOMEN</h3>
+                                                <h4 class="product-price">₹ 799.00</h4>
+                                        </div>
+                                </div>
+                        </div>
+                        <div class="col-md-6 col-lg-4 col-xl-3">
+                                <div id="product-2c" class="single-product">
+                                        <div class="part-1">
+                                            
+                                                <ul>
+                                                        <li><a href="#"><i class="fas fa-shopping-cart"></i></a></li>
+                                                        <li><a href="#"><i class="fas fa-heart"></i></a></li>
+                                                </ul>
+                                        </div>
+                                        <div class="part-2">
+                                            <h3 class="product-title">BATA YELLOW SANDAL FOR WOMEN</h3>
+                                            <h4 class="product-price">₹ 1199.00</h4>
+                                        </div>
+                                </div>
+                        </div>
+                        <!-- Single Product -->
+                        <div class="col-md-6 col-lg-4 col-xl-3">
+                                <div id="product-2d" class="single-product">
+                                        <div class="part-1">
+                                                <span class="new">new</span>
+                                                <ul>
+                                                        <li><a href="#"><i class="fas fa-shopping-cart"></i></a></li>
+                                                        <li><a href="#"><i class="fas fa-heart"></i></a></li>
+                                                </ul>
+                                        </div>
+                                        <div class="part-2">
+                                            <h3 class="product-title">MARIE CLAIRE PINK SANDAL FOR WOMEN</h3>
+                                            <h4 class="product-old-price">₹ 1299.00</h4>
+                                        </div>
+                                </div>
+                        </div>
+                </div>
+        </div>
+    </section>
+    <section class="section-products" id="bridal-section">
+        <div class="container">
+                <div class="row justify-content-center text-center">
+                        <div class="col-md-8 col-lg-6">
+                                <div class="header">  
+                                        <h2>BRIDAL COLLECTIONS</h2>
+                                </div>
+                        </div>
+                </div>
+                <div class="row">
+                        <div class="col-md-6 col-lg-4 col-xl-3">
+                                <div id="product-2e" class="single-product">
+                                        <div class="part-1">
+                                                <ul>
+                                                        <li><a href="#"><i class="fas fa-shopping-cart"></i></a></li>
+                                                        <li><a href="#"><i class="fas fa-heart"></i></a></li>
+                                                </ul>
+                                        </div>
+                                        <div class="part-2">
+                                                <h3 class="product-title">WOMEN ANTIQUE EMBELLISHED BLOCK HEELS</h3>
+                                                <h4 class="product-price">₹ 1745.00</h4>
+                                        </div>
+                                </div>
+                        </div>
+                        <div class="col-md-6 col-lg-4 col-xl-3">
+                                <div id="product-2f" class="single-product">
+                                        <div class="part-1">
+                                                
+                                                <ul>
+                                                        <li><a href="#"><i class="fas fa-shopping-cart"></i></a></li>
+                                                        <li><a href="#"><i class="fas fa-heart"></i></a></li>
+                                                </ul>
+                                        </div>
+                                        <div class="part-2"> 
+                                            <h3 class="product-title">>WOMEN ANTIQUE MBELLISHED KITTEN MULES</h3>
+                                            <h4 class="product-price">₹ 1495.00</h4>
+                                        </div>
+                                </div>
+                        </div>
+                        <div class="col-md-6 col-lg-4 col-xl-3">
+                                <div id="product-2g" class="single-product">
+                                        <div class="part-1">
+                                            
+                                                <ul>
+                                                        <li><a href="#"><i class="fas fa-shopping-cart"></i></a></li>
+                                                        <li><a href="#"><i class="fas fa-heart"></i></a></li>
+                                                </ul>
+                                        </div>
+                                        <div class="part-2">
+                                            <h3 class="product-title">>WOMEN PEWTER TEXTURED PARTY BLOCK HEELS</h3>
+                                            <h4 class="product-price">₹ 1945.00</h4>
+                                               
+                                        </div>
+                                </div>
+                        </div>
+                        <div class="col-md-6 col-lg-4 col-xl-3">
+                                <div id="product-2h" class="single-product">
+                                        <div class="part-1">
+                                                <span class="new">new</span>
+                                                <ul>
+                                                        <li><a href="#"><i class="fas fa-shopping-cart"></i></a></li>
+                                                        <li><a href="#"><i class="fas fa-heart"></i></a></li>
+                                                </ul>
+                                        </div>
+                                        <div class="part-2">
+                                            <h3 class="product-title">WOMEN ETHNIC EMBELLISHED ONE TOE WEDGES</h3>
+                                            <h4 class="product-price">₹ 1995.00</h4>
+                                        </div>
+                                </div>
+                        </div>                    
+                </div>
+        </div>
+    </section>
+    <section class="section-products" id="heels-section">
+        <div class="container">
+                <div class="row justify-content-center text-center">
+                        <div class="col-md-8 col-lg-6">
+                                <div class="header">  
+                                        <h2>HIGH HEELS</h2>
+                                </div>
+                        </div>
+                </div>
+                <div class="row">
+                        <div class="col-md-6 col-lg-4 col-xl-3">
+                                <div id="product-2i" class="single-product">
+                                        <div class="part-1">
+                                                <ul>
+                                                        <li><a href="#"><i class="fas fa-shopping-cart"></i></a></li>
+                                                        <li><a href="#"><i class="fas fa-heart"></i></a></li>
+                                                </ul>
+                                        </div>
+                                        <div class="part-2">
+                                            
+                                            <h3 class="product-title">STELETTO HEEL POINTED COURT SHOES</h3>
+                                            <h4 class="product-price">₹ 2999.00</h4>
+                                        </div>
+                                </div>
+                        </div>
+                        <div class="col-md-6 col-lg-4 col-xl-3">
+                                <div id="product-2j" class="single-product">
+                                        <div class="part-1">
+                                                <span class="discount">15% off</span>
+                                                <ul>
+                                                        <li><a href="#"><i class="fas fa-shopping-cart"></i></a></li>
+                                                        <li><a href="#"><i class="fas fa-heart"></i></a></li>
+                                                </ul>
+                                        </div>
+                                        <div class="part-2">
+                                            <h3 class="product-title">CLEAR-STRAP CHUNKY HEELED SANDALS</h3>
+                                            <h4 class="product-price">₹ 660.00</h4>
+                                        </div>
+                                </div>
+                        </div>
+                        <div class="col-md-6 col-lg-4 col-xl-3">
+                                <div id="product-2k" class="single-product">
+                                        <div class="part-1">
+                                                <span class="discount">5% off</span>
+                                                <ul>
+                                                        <li><a href="#"><i class="fas fa-shopping-cart"></i></a></li>
+                                                        <li><a href="#"><i class="fas fa-heart"></i></a></li>
+                                                </ul>
+                                        </div>
+                                        <div class="part-2">
+                                                <h3 class="product-title">HIGH-TOP STILETTO SANDALS WITH BUCKLES</h3>
+                                                <h4 class="product-price">₹ 1999.00</h4>
+                                        </div>
+                                </div>
+                        </div>
+                        <div class="col-md-6 col-lg-4 col-xl-3">
+                                <div id="product-2l" class="single-product">
+                                        <div class="part-1">
+                                                <span class="new">new</span>
+                                                <ul>
+                                                        <li><a href="#"><i class="fas fa-shopping-cart"></i></a></li>
+                                                        <li><a href="#"><i class="fas fa-heart"></i></a></li>
+                                                </ul>
+                                        </div>
+                                        <div class="part-2">
+                                                <h3 class="product-title">OPEN TOE PLATFORM HEELS</h3>
+                                                <h4 class="product-price">₹ 1199.00</h4>
+                                        </div>
+                                </div>
+                        </div>                      
+                </div>
+        </div>
+    </section>
+    <section class="section-products" id="boots-section">
+        <div class="container">
+                <div class="row justify-content-center text-center">
+                        <div class="col-md-8 col-lg-6">
+                                <div class="header">  
+                                        <h2>BOOTS</h2>
+                                </div>
+                        </div>
+                </div>
+                <div class="row">
+                        <div class="col-md-6 col-lg-4 col-xl-3">
+                                <div id="product-2m" class="single-product">
+                                        <div class="part-1">
+                                                <span class="discount">25% off</span>
+                                                <ul>
+                                                        <li><a href="#"><i class="fas fa-shopping-cart"></i></a></li>
+                                                        <li><a href="#"><i class="fas fa-heart"></i></a></li>
+                                                </ul>
+                                        </div>
+                                        <div class="part-2">
+                                            <h3 class="product-title">WOMEN BLACK SOLID BLOCK HEELED BOOTS</h3>
+                                            <h4 class="product-price">₹ 1945.00</h4>
+                                        </div>
+                                </div>
+                        </div>
+                        <div class="col-md-6 col-lg-4 col-xl-3">
+                                <div id="product-2n" class="single-product">
+                                        <div class="part-1">
+                                                <ul>
+                                                        <li><a href="#"><i class="fas fa-shopping-cart"></i></a></li>
+                                                        <li><a href="#"><i class="fas fa-heart"></i></a></li>
+                                                </ul>
+                                        </div>
+                                        <div class="part-2">
+                                            <h3 class="product-title">NOEMIEFLEX WOMEN'S BLACK ANKLE BOOTS</h3>
+                                            <h4 class="product-price">₹ 7499.00</h4>
+                                        </div>
+                                </div>
+                        </div>
+                        <div class="col-md-6 col-lg-4 col-xl-3">
+                                <div id="product-2o" class="single-product">
+                                        <div class="part-1">
+                                                <span class="new">new</span>
+                                                <ul>
+                                                        <li><a href="#"><i class="fas fa-shopping-cart"></i></a></li>
+                                                        <li><a href="#"><i class="fas fa-heart"></i></a></li>
+                                                </ul>
+                                        </div>
+                                        <div class="part-2">
+                                                <h3 class="product-title">WIDE FIT LEATHER BLOCK HEEL ANKLE BOOTS</h3>
+                                                <h4 class="product-price">₹ 6999.00</h4>
+                                        </div>
+                                </div>
+                        </div>
+                        <div class="col-md-6 col-lg-4 col-xl-3">
+                                <div id="product-2p" class="single-product">
+                                        <div class="part-1">
+                                                <ul>
+                                                        <li><a href="#"><i class="fas fa-shopping-cart"></i></a></li>
+                                                        <li><a href="#"><i class="fas fa-heart"></i></a></li>
+                                                </ul>
+                                        </div>
+                                        <div class="part-2">
+                                                <h3 class="product-title">BATA TAN HIGH ANKLE SHOES </h3>
+                                                <h4 class="product-price">₹ 3499.00</h4>
+                                        </div>
+                                </div>
+                        </div>                      
+                </div>
+        </div>
+    </section>
+    <section class="section-products" id="sneakers-section">
+        <div class="container">
+                <div class="row justify-content-center text-center">
+                        <div class="col-md-8 col-lg-6">
+                                <div class="header">  
+                                        <h2>SNEAKERS AND SHOES</h2>
+                                </div>
+                        </div>
+                </div>
+                <div class="row">
+                        <div class="col-md-6 col-lg-4 col-xl-3">
+                                <div id="product-2q" class="single-product">
+                                        <div class="part-1">
+                                                <ul>
+                                                        <li><a href="#"><i class="fas fa-shopping-cart"></i></a></li>
+                                                        <li><a href="#"><i class="fas fa-heart"></i></a></li>
+                                                </ul>
+                                        </div>
+                                        <div class="part-2">
+                                            <PUMA class="product-title">WOMEN COLORBLOCK MID-TOP LACE-UP SNEAKERS</h3>
+                                            <h4 class="product-price">₹ 600.00</h4>
+                                        </div>
+                                </div>
+                        </div>
+                        <div class="col-md-6 col-lg-4 col-xl-3">
+                                <div id="product-2r" class="single-product">
+                                        <div class="part-1">
+                                                <span class="discount">15% off</span>
+                                                <ul>
+                                                        <li><a href="#"><i class="fas fa-shopping-cart"></i></a></li>
+                                                        <li><a href="#"><i class="fas fa-heart"></i></a></li>
+                                                </ul>
+                                        </div>
+                                        <div class="part-2">
+                                            <h3 class="product-title">PAVERO W WOMEN'S SNEAKER</h3>
+                                            <h4 class="product-price">₹ 1450.00</h4>
+                                        </div>
+                                </div>
+                        </div>
+                        <div class="col-md-6 col-lg-4 col-xl-3">
+                                <div id="product-2s" class="single-product">
+                                        <div class="part-1">
+                                                <span class="discount">5% off</span>
+                                                <ul>
+                                                        <li><a href="#"><i class="fas fa-shopping-cart"></i></a></li>
+                                                        <li><a href="#"><i class="fas fa-heart"></i></a></li>
+                                                </ul>
+                                        </div>
+                                        <div class="part-2">
+                                                <h3 class="product-title">RENNO N GENERATION WOMEN'S SNEAKER</h3>
+                                                <h4 class="product-price">₹ 5000.00</h4>
+                                        </div>
+                                </div>
+                        </div>
+                        <div class="col-md-6 col-lg-4 col-xl-3">
+                                <div id="product-2t" class="single-product">
+                                        <div class="part-1">
+                                                <span class="new">new</span>
+                                                <ul>
+                                                        <li><a href="#"><i class="fas fa-shopping-cart"></i></a></li>
+                                                        <li><a href="#"><i class="fas fa-heart"></i></a></li>
+                                                </ul>
+                                        </div>
+                                        <div class="part-2">
+                                                <h3 class="product-title">ADWIWIAX WOMEN'S JOGGERS- ALDO</h3>
+                                                <h4 class="product-price">₹ 6999.00</h4>
+                                        </div>
+                                </div>
+                        </div>                      
+                </div>
+        </div>
+    </section>
+    <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+    <footer>
+        <div class="footerLeft">
+            <div class="footerMenu">
+                <h1 class="fMenuTitle">About Us</h1>
+                <ul class="fList">
+                    <li class="fListItem">Company</li>
+                    <li class="fListItem">Contact</li>
+                    <li class="fListItem">Stores</li>
+                </ul>
+            </div>
+            <div class="footerMenu">
+                <h1 class="fMenuTitle">Support</h1>
+                <ul class="fList">
+                    
+                    <li class="fListItem">Refund</li>
+                    <li class="fListItem">FAQ</li>
+                    <li class="fListItem">Feedback</li>
+                   
+                </ul>
+            </div>
+            <div class="footerMenu">
+                <h1 class="fMenuTitle">Products</h1>
+                <ul class="fList">
+                    <li class="fListItem">Men</li>
+                    <li class="fListItem">Women</li>
+                    <li class="fListItem">Kids</li>
+                    
+                </ul>
+            </div>
+        </div>
+        <div class="footerRight">
+            <div class="footerRightMenu">
+                <h1 class="fMenuTitle">Follow Us</h1>
+                <div class="fIcons">
+                    <img src="./img/facebook.png" alt="" class="fIcon">
+                    <img src="./img/twitter.png" alt="" class="fIcon">
+                    <img src="./img/instagram.png" alt="" class="fIcon">
+                    <img src="./img/whatsapp.png" alt="" class="fIcon">
+                </div>
+            </div>
+            <div class="footerRightMenu">
+                <span class="copyright">All rights reserved. 2023.</span>
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <script src="./index.js"></script>
+</body>
+
+</html>
